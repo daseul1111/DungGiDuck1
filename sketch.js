@@ -20,15 +20,15 @@ function keyTyped() {
     particles1.push(p);
   }
   //jumping high
-  else if (key == 's') {
+  else if (key == 'c') {
     var q = new Particle(random(width), 100, 0.5);
     particles2.push(q);
   }
   //out low
-  else if (key == 'c') {
+  else if (key == 's') {
     particles1.splice(0, 1);
   }
-  //out highaa
+  //out high
   else if (key == 'v') {
     particles2.splice(0, 1);
   }
