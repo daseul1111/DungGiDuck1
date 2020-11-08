@@ -27,7 +27,7 @@ function keyTyped() {
   //out low
   else if (key == 'c') {
     particles1.splice(0, 1);
-  } 
+  }
   //out highaa
   else if (key == 'v') {
     particles2.splice(0, 1);
@@ -35,7 +35,7 @@ function keyTyped() {
 }
 
 function draw() {
-  background(250,237,125);
+  background(231,231,231);
 
   // 공에 무게감 주기
   var wind = createVector(0.02, 0);
@@ -43,7 +43,7 @@ function draw() {
   for (var i = 0; i < particles1.length; i++) {
     var gravity1 = createVector(0.1 * particles1[i], 0.8 * particles1[i].mass);
     particles1[i].applyForce(gravity1);
- 
+
     if (mouseIsPressed) {
       particles1[i].applyForce(wind);
     }
