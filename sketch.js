@@ -83,7 +83,7 @@ function Particle(x, y, m) {
 
   function drawGradient(x, y) {
     //뿔
-    fill(102, 0, 88);
+    fill(201, 0, 0);
     triangle(x - 40, y - 35, x, y - 20, x - 35, y);
     triangle(x + 40, y - 40, x, y - 20, x + 35, y);
     noStroke();
