@@ -3,14 +3,6 @@ var particles2 = [];
 
 function setup() {
   createCanvas(640, 360);
-  // var p = new Particle(random(width), 280, 2);
-  // var q = new Particle(random(width), 100, 0.5);
-  //   for (var i = 0; i<10; i++) {
-  //   // 낮고 힘차게 쿵쾅쿵쾅
-  //   particles1[i] = new Particle(200, 280, 2);
-  //   // 높고 신나게 쿵쾅쿵쾅
-  //   particles2[i] = new Particle(600, 100, 0.5);
-  //   }
 }
 
 function keyTyped() {
@@ -88,13 +80,6 @@ function Particle(x, y, m) {
     // drawHorn(this.pos.x,this.pos,y);
     drawGradient(this.pos.x, this.pos.y);
   }
-
-  // function drawHorn(x,y) {
-  //   fill(102,0,88);
-  //   triangle(x-40,y-35,x,y-20,x-35,y);
-  //   triangle(x+40,y-40,x,y-20,x+35,y);
-  //   noStroke();
-  // }
 
   function drawGradient(x, y) {
     //뿔
